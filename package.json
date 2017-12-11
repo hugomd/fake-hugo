@@ -1,0 +1,19 @@
+{
+  "name": "fake-hugo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "prestart": "cd src && node loader.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^2.4.1",
+    "promise-redis": "0.0.5",
+    "redis": "^2.8.0",
+    "twit": "^2.2.9",
+    "unescape": "^1.0.1"
+  }
+}

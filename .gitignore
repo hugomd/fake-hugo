@@ -1,0 +1,5 @@
+node_modules/
+data/
+src/tweets.csv
+
+.DS_Store

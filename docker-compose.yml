@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  tweetor:
+    image: reg.g.hu.md/hugo/fake-hugo/fake-hugo-docker
+    build:
+      context: .
+      dockerfile: .docker/prod/Dockerfile
+    environment:
+      - CONSUMER_KEY=$CONSUMER_KEY
+      - CONSUMER_SECRET=$CONSUMER_SECRET
+      - ACCESS_TOKEN=$ACCESS_TOKEN
+      - ACCESS_TOKEN_SECRET=$ACCESS_TOKEN_SECRET
+  redis:
+    image: redis:3.2.11-alpine
+    volumes:
+      - ./data:/data
+    ports:
+      - 6379:6379
