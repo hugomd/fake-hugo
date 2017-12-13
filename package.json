@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "prestart": "cd src && node loader.js"
+    "prestart": "node src/index.js"
   },
   "author": "",
   "license": "ISC",
